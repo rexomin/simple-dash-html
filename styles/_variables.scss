@@ -1,16 +1,7 @@
-$primary-color: #6600CC;
-$primary-color-lighten: #D9B3FF;
-$primary-color-lighten-2: #FFE6FF;
-$primary-color-alt: #AC5DD9;
-
-$secondary-color: #FFCC00;
-$secondary-color-lighten: #ffdd56;
-$secondary-color-lighten-2: #ffe57b;
+$primary-color: #4040F2;
 
 $dark-text: #333333;
-$gray-text: #8F90A6;
 $error-color: #ED4034;
-
 
 @mixin only-phone {
     @media (max-width: 990px) {

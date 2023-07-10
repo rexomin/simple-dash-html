@@ -1,0 +1,128 @@
+.card {
+    padding: 24px;
+    border: 1px solid #EAECEE;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 6px rgba(33, 33, 33, .2);
+    }
+
+    .card-img {
+        height: 157px;
+        border-radius: 8px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .card-title {
+        @extend .tg-heading-5;
+    }
+
+    .card-text {
+        @extend .tg-body-sm;
+        color: #4F5B67;
+    }
+
+    .card-profile-avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-profile-title {
+        @extend .tg-heading-6;
+        text-align: center;
+    }
+
+    .card-profile-desc {
+        @extend .tg-body-sm;
+        text-align: center;
+    }
+
+    .card-profile-details-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .divider {
+            width: 1px;
+            height: 24px;
+            background-color: #EAECEE;
+        }
+
+        .card-profile-details {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: -10px;
+
+            li {
+                text-align: center;
+                padding: 10px;
+
+                .detail-title {
+                    @extend .tg-body-sm;
+                }
+
+                .detail-value {
+                    @extend .tg-body-md;
+                }
+            }
+        }
+    }
+
+    .card-footer {
+        &.center-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.micro-card {
+    padding: 12px 24px;
+    border: 1px solid #EAECEE;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 6px rgba(33, 33, 33, .2);
+    }
+
+    .micro-card-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .micro-card-content {
+        flex: 1;
+        margin-left: 16px;
+
+        .micro-card-title {
+            @extend .tg-body-md;
+        }
+
+        .micro-card-desc {
+            @extend .tg-body-sm;
+            color: #4F5B67;
+            margin-top: 2px;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.sidebar{
+    width: 240px;
+
+    .logo-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-top{
+
+    }
+
+    .sidebar-bottom{
+        margin-top: 50px;
+
+        .sidebar-account{
+            display: flex;
+            align-items: center;
+            padding: 24px;
+            border-top: 1px solid #F1F1F1;
+            margin-top: 8px;
+
+            .sidebar-account-img{
+                margin-right: 15px;
+            }
+
+            .sidebar-account-name{
+                @extend .tg-body-lg;
+                color: #4F5B67;
+            }
+            
+            .sidebar-account-desc{
+                @extend .tg-body-sm;
+                color: #4F5B67;
+            }
+        }
+    }
+
+    .sidebar-nav{
+        display: flex;
+        flex-direction: column;
+
+        li{
+            padding: 12px 24px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            a{
+                display: flex;
+                align-items: center;
+
+                .nav-icon{
+                    font-size:24px;
+                    margin-right: 23px;
+                }
+    
+                .nav-text{
+                    @extend .tg-body-lg;
+                }
+            }
+
+
+            &:hover{
+                background-color: #F7F7FB;
+            }
+
+            &.active{
+                background-color: #F7F7FB;
+                border-right: 4px solid #4040F2;
+            }
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.sidebar.dark{
+    background-color: #000000;
+    color: #F1F1F1;
+
+    .sidebar-nav{
+        li{
+            &:hover{
+                background-color: #242D35;
+            }
+
+            &.active{
+                background-color: #242D35;
+            }
+        }
+    }
+
+    .sidebar-bottom{
+        margin-top: 50px;
+
+        .sidebar-account{
+            .sidebar-account-name{
+                color: #F1F1F1;
+            }
+            
+            .sidebar-account-desc{
+                color: #F1F1F1;
+            }
+        }
+    }
+}

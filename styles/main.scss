@@ -2,17 +2,27 @@
 @import "./reboot";
 
 /* essential things */
-@import "./fonts/load";
 @import "./bootstrap_grid";
 @import "./variables";
-@import "./colors";
+@import "./fonts/load";
+@import "./typography";
 @import "./global";
 
 /* components */
-@import "./components/_sample_btn";
-@import "./components/_sample_input";
+@import "./components/btn";
+@import "./components/badge";
+@import "./components/progress-bar";
+@import "./components/avatar";
+@import "./components/avatar-with-name";
+@import "./components/avatar-stack";
+@import "./components/input";
+@import "./components/custom-checkbox";
+@import "./components/table";
+@import "./components/metric";
+@import "./components/icon-text";
+@import "./components/card";
+@import "./components/sidebar";
+@import "./components/dropdown";
 
 /* pages */
-@import "./pages/header";
-@import "./pages/footer";
-@import "./pages/sample";
+

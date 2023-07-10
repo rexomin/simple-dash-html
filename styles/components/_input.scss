@@ -1,0 +1,124 @@
+.input-wrapper {
+    margin-bottom: 24px;
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="password"] {
+        background: #FFFFFF;
+        border: 1px solid #C7C9D9;
+        border-radius: 8px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        caret-color: $primary-color;
+
+        &::placeholder {
+            color: #8F90A6;
+            opacity: 1;
+        }
+
+        &:focus {
+            border: 2px solid $primary-color;
+        }
+    }
+
+    &.error {
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"] {
+            border: 2px solid $error-color;
+        }
+
+        .input-error {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            color: $error-color;
+
+            .input-error-icon i {
+                font-size: 16px;
+            }
+
+            .input-error-text {
+                font-size: 12px;
+                line-height: 16px;
+                margin-left: 8px;
+            }
+        }
+    }
+
+    &.deactive {
+        position: relative;
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"] {
+            color: #C7C9D9;
+        }
+
+        .input-deactive-icon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            color: #C7C9D9;
+        }
+    }
+
+    &.with-icon {
+        position: relative;
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 15px 20px 15px 55px;
+        }
+
+        .input-icon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            color: $dark-text;
+        }
+    }
+}
+
+.textarea-wrapper {
+    background: #FFFFFF;
+    border: 1px solid #C7C9D9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 15px 20px;
+
+    textarea {
+        box-sizing: border-box;
+        border: none;
+        width: 100%;
+        display: block;
+        resize: vertical;
+        min-height: 140px;
+        font-size: 14px;
+        line-height: 24px;
+
+        &::placeholder {
+            color: #8F90A6;
+            opacity: 1;
+        }
+
+        &:hover~.textarea-wrapper {
+            background-color: red;
+        }
+    }
+}
